@@ -14,6 +14,7 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 1. https://firebase.google.com/docs/cloud-messaging/fcm-architecture?hl=ko
 2. https://github.com/NAVER-CAMPUS-HACKDAY-2017w/common/issues/3
+3. https://blog.silentsoft.org/archives/10
 
 <br>
 
