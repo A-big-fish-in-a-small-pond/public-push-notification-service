@@ -8,6 +8,12 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 </div>
 
+## Step
+
+1. PPNS SDK 전용 안드로이드 제작 (80%)
+2. PPNS 서버 제작
+3. 테스트 및 배포
+
 <br>
 
 ## References
