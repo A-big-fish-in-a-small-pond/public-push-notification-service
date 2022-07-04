@@ -8,6 +8,8 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 </div>
 
+<br>
+
 ## Step
 
 1. PPNS SDK 전용 안드로이드 제작 (80%)
