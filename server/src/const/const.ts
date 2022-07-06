@@ -1,0 +1,3 @@
+export const AUTHORIZATION = "1234567890";
+export const PPNS_CONTEXT_PORT = 3000;
+export const PPNS_RESTAPI_PORT = 3001;
