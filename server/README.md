@@ -10,31 +10,50 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 <br>
 
-## Step
+## How to execute
 
-1. Installation of the PPNS-only Android application
-2. Server start (npm start)
-3. Send post to server as below. (check authrizition and client ip)
+edit const file. <br>
+path : ./const/const.ts
 
-<br>
+```ts
+export const AUTHORIZATION = "1234567890"; // your AUTHORIZATION KEY - client same
+export const PPNS_CONTEXT_PORT = 3000;
+export const PPNS_RESTAPI_PORT = 3001;
+```
 
-## Example
+and start
 
-<img src="./instructor/capture1.png">
-<img src="./instructor/capture2.jpg">
-<img src="./instructor/capture3.jpg">
-<img src="./instructor/capture4.jpg">
+```sh
+cd server
+npm install --save
+npm start
+```
 
-<br>
+Once the server is turned on android is installed, let's call restapi
 
-## References
+```sh
+cd server
+npm install --save
+npm start
+```
 
-1. https://firebase.google.com/docs/cloud-messaging/fcm-architecture?hl=ko
-2. https://github.com/NAVER-CAMPUS-HACKDAY-2017w/common/issues/3
-3. https://blog.silentsoft.org/archives/10 - 자바로 클래스간 이벤트 통신
-4. https://shihis123.tistory.com/entry/Android-Background-ServiceThread-%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%9C%A0%EC%A7%80%ED%95%98%EA%B8%B0Notification - 안드로이드 백그라운드?
-5. https://onedaycodeing.tistory.com/138
-6. https://forest71.tistory.com/185
+<img src="../instructor/capture3.jpg">
+<img src="../instructor/capture4.jpg">
+
+result data is below;
+
+```json
+{
+    "code": 200,
+    "result": {
+        "result": {
+            "resultCode": "000",
+            "resultMessage": "성공"
+        }
+    },
+    "data": "{\"auth\":\"1234567890\",\"result\":\"success\"}"
+}
+```
 
 <br>
 
