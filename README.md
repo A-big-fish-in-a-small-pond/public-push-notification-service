@@ -14,7 +14,7 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 1. Installation of the PPNS-only Android application
 2. Server start (npm start)
-3. Send post to server as below.
+3. Send post to server as below. (check authrizition and client ip)
 
 
 <br> 
