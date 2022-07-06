@@ -31,12 +31,6 @@ npm start
 
 Once the server is turned on android is installed, let's call restapi
 
-```sh
-cd server
-npm install --save
-npm start
-```
-
 <img src="../instructor/capture3.jpg">
 <img src="../instructor/capture4.jpg">
 
