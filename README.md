@@ -12,9 +12,16 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 ## Step
 
-1. PPNS SDK 전용 안드로이드 제작 (80%)
-2. PPNS 서버 제작
-3. 테스트 및 배포
+1. Installation of the PPNS-only Android application
+2. Server start (npm start)
+3. Send post to server as below.
+
+
+<br> 
+
+## Example
+
+
 
 <br>
 
