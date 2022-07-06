@@ -21,6 +21,10 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 ## Example
 
+<img src="./instructor/capture1.png>
+<img src="./instructor/capture2.jpg>
+<img src="./instructor/capture3.jpg>
+<img src="./instructor/capture4.jpg>
 
 
 <br>
