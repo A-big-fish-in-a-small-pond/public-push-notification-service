@@ -1,4 +1,5 @@
-# ServiceExample #
+# ServiceExample 슈정중 ... #
+
 This is a example to run startForeground() without showing notification.
 
 It is an immortal service that can not be killed by Android.
