@@ -12,8 +12,7 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 ## Result Video 
 
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://github.com/A-big-fish-in-a-small-pond/public-push-notification-service/blob/master/instructor/result.mp4)
-
+<img src="https://github.com/A-big-fish-in-a-small-pond/public-push-notification-service/blob/master/instructor/result.gif"/>
 
 <br>
 
