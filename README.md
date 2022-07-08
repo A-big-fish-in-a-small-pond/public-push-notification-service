@@ -12,7 +12,7 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 ## Result Video 
 
-<video src="./instructor/result.mp4">
+[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/vt5fpE0bzSY)
 
 
 <br>
