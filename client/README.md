@@ -1,31 +1,88 @@
-# ServiceExample 슈정중 ... #
+# <div align="center"> Public Push Notification Service - Client </div>
 
-This is a example to run startForeground() without showing notification.
+<div align="center">
 
-It is an immortal service that can not be killed by Android.
+What is PPNS?
 
-An immortal service can be invoked by calling startForegroundService.
+It's a cross-platform messaging solution that lets you reliably send messages for free. Inspired by Firebase Cloud Messaging, it was developed for development implementation and customization. Firebase cloud messaging systems implement servers as firebase servers, but they allow you to implement servers directly.
 
-However, there is a problem that the notification is displayed.
+</div>
 
-There were several attempts to solve this problem, but it did not work.
+<br>
 
-This is an example of an attempt to solve this problem.
+## How to use
 
-### Principle ###
-- When the service is finished, the alarm is executed after 1 second.
-- In the alarm,
-- If it is an older version of android Oreo, just call startService to run the service.
-- If the version is later than Oreo, call startForegroundService to execute the immortal service, and start service by calling startService in this immortal service.
-- And then, terminate this immortal service.
+1. create your Notification Event Class
 
-![image](./image.png)
+```java
+// for example
+package gujc.serviceexample;
 
+import android.content.Context;
 
-### INSTALLATION ###
-1. Clone this source from github (in android studio).
-2. Run.
-3. Quit app and check messages.
+import gujc.serviceexample.event.EventListener;
+import gujc.serviceexample.event.NotiEvent;
 
-### License ###
-MIT
+public class NotiEventTest extends NotiEvent  implements EventListener {
+
+    @Override
+    public void onEvent(String event, Context context) {
+        super.onEvent(event, context);
+    }
+
+    @Override
+    public String getIp() {
+        return "192.168.137.1"; // your ppns server Ip
+    }
+
+    @Override
+    public String getPort() {
+        return "3000";  // your ppns server Port
+    }
+}
+```
+
+2. input your Activity
+
+```java
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    /// ... 
+        Index.onCreateMethod(getApplicationContext(), "gujc.serviceexample.NotiEventTest","1234567890"); // put your Notification Event Class and server auth code
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (Settings.canDrawOverlays(getApplicationContext()) == false) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION, Uri.parse("package:" + getPackageName()));
+                startActivityForResult(intent, 1);
+            }
+        }
+    /// ... 
+    }
+    
+    @Override
+    protected void onDestroy() {
+    /// ...
+        Index.onDestroyMethod(getApplicationContext());
+    /// ... 
+    }
+```
+
+3. start build and app
+
+<br>
+
+## Contact
+
+[Junho Kim](libtv@naver.com) <br>
+[JongSun Park](ahrl1994@gmail.com)
+
+<br>
+
+## HomePage
+
+Github © [Page](https://github.com/A-big-fish-in-a-small-pond/)
+
+<br>
+
+## License
+
+this is licensed under [MIT LICENSE](https://github.com/A-big-fish-in-a-small-pond/asterisk-visible-ars).
