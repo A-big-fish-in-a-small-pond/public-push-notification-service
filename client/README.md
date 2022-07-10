@@ -70,7 +70,7 @@ public class NotiEventTest extends NotiEvent  implements EventListener {
 
 <br>
 
-### Principle ###
+## Principle 
 - When the service is finished, the alarm is executed after 1 second.
 - In the alarm,
 - If it is an older version of android Oreo, just call startService to run the service.
