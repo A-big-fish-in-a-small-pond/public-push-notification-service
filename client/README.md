@@ -16,6 +16,7 @@ It's a cross-platform messaging solution that lets you reliably send messages fo
 
 ```java
 // for example
+// NotiEventTest.java
 package gujc.serviceexample;
 
 import android.content.Context;
@@ -45,6 +46,7 @@ public class NotiEventTest extends NotiEvent  implements EventListener {
 2. input your Activity
 
 ```java
+// MainActivity.java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     /// ... 
