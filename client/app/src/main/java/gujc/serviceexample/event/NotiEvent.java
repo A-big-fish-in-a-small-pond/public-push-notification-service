@@ -91,7 +91,7 @@ public class NotiEvent implements EventListener {
 
     @Override
     public String getIp() {
-        return "192.168.163.205";
+        return "192.168.137.1";
     }
 
     @Override

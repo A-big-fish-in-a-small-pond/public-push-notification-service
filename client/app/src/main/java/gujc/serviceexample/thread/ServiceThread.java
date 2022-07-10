@@ -48,7 +48,7 @@ public class ServiceThread extends Thread {
         int i = 0;
 
         try {
-            InetSocketAddress socketAddress = new InetSocketAddress("192.168.163.205", 3000);
+            InetSocketAddress socketAddress = new InetSocketAddress(this.service.listener.getIp(), Integer.parseInt(this.service.listener.getPort()));
             socket.connect(socketAddress);
 
             socketInput =  new BufferedReader(new InputStreamReader(socket.getInputStream()));
