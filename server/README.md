@@ -16,7 +16,7 @@ edit const file. <br>
 path : ./const/const.ts
 
 ```ts
-export const AUTHORIZATION = "1234567890"; // your AUTHORIZATION KEY - client same
+export const AUTHORIZATION = "1234567890"; // your AUTHORIZATION KEY - must same client auth code in Notievent Class 
 export const PPNS_CONTEXT_PORT = 3000;
 export const PPNS_RESTAPI_PORT = 3001;
 ```
