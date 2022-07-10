@@ -70,6 +70,17 @@ public class NotiEventTest extends NotiEvent  implements EventListener {
 
 <br>
 
+### Principle ###
+- When the service is finished, the alarm is executed after 1 second.
+- In the alarm,
+- If it is an older version of android Oreo, just call startService to run the service.
+- If the version is later than Oreo, call startForegroundService to execute the immortal service, and start service by calling startService in this immortal service.
+- And then, terminate this immortal service.
+
+![image](./image.png)
+
+<br>
+
 ## Contact
 
 [Junho Kim](libtv@naver.com) <br>
