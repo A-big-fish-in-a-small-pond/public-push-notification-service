@@ -1,4 +1,4 @@
-# <div align="center"> Public Push Notification Service </div>
+# <div align="center"> Public Push Notification Service - PPNS </div>
 
 <div align="center">
 
